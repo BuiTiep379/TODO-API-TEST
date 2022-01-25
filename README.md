@@ -1,11 +1,12 @@
 ###
 
-- Những điểm cần cải thiện:
+```Những điểm cần cải thiện:
 
 * Thời gian tìm hiểm typescript typeorm và kết nối với mysql ở tyeorm chưa nhiều.
 * Code typescript chưa được tối ưu.
 * CreatedAt and UpdatedAt trong model Task chưa được xử lý ở type Date()
 * Chưa validate entity trong typeorm
+```
 
 #### Setup
 
@@ -24,14 +25,12 @@ port: 2000
 [] Gõ: mysql -u root -p
 [] Nhập password
 [] Tạo New Account: gõ vào termial (thay thế [newuser] và [password] tùy ý)
-```
 
 [] CREATE USER 'newuser'@'localhost' IDENTIFIED WITH mysql*native_password BY 'password';
 [] GRANT ALL PRIVILEGES ON *.\_ TO ‘newuser’@'localhost';
 [] FLUSH PRIVILEGES;
 [] quit;
 
-```
 [] connection vào MySQL Workbench bằng account vừa tạo
 ```
 
