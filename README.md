@@ -1,6 +1,6 @@
-###
+### Những điểm cần cải thiện:
 
-```Những điểm cần cải thiện:
+```
 
 * Thời gian tìm hiểm typescript typeorm và kết nối với mysql ở tyeorm chưa nhiều.
 * Code typescript chưa được tối ưu.
