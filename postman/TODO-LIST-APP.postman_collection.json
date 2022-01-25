@@ -1,0 +1,301 @@
+{
+	"info": {
+		"_postman_id": "8f26f815-ba4d-42ca-92e5-b9c94d597ad9",
+		"name": "TODO-LIST-APP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "SIGNIN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "buitiepUser@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2000/api/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"api",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SIGNUP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Xuan Phuong",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "buitiepUser@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2000/api/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"api",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-ALL-USER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2000/api/get-all-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"api",
+								"get-all-user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TASK",
+			"item": [
+				{
+					"name": "CREATE TASK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "learn react",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "study component",
+									"type": "default"
+								},
+								{
+									"key": "dateComplete",
+									"value": "26/01/2022 09:05:00",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2000/api/task/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"api",
+								"task",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-ALL-TASKS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2000/api/task/get-all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"api",
+								"task",
+								"get-all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-TASK-BY-ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2000/api/task/get/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"api",
+								"task",
+								"get",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE TASK",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "nodejs typeorm",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "code project",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2000/api/task/update/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"api",
+								"task",
+								"update",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-TASK",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2000/api/task/remove/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"api",
+								"task",
+								"remove",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-TASK-BY-USERID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2000/api/task/get-all/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"api",
+								"task",
+								"get-all",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ASSIGN-TASK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2000/api/task/assign/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"api",
+								"task",
+								"assign",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
